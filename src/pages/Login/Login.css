@@ -1,0 +1,95 @@
+/* Login.css */
+
+/* Global Reset for the login page */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Wrapper for the login page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Styling the login form container */
+.login-container {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Header */
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Input Fields */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Input Fields with custom font-family for email and password */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  font-family: Arial, sans-serif;
+}
+
+/* Button Styling */
+.login-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+/* Error message */
+.login-container .error {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Optional Styling for Focused Inputs */
+.login-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .login-container {
+      padding: 1.5rem 2rem;
+  }
+
+  .login-container button {
+      font-size: 1rem;
+  }
+}
